@@ -22,7 +22,7 @@
     margin-bottom: 0.7rem;
     font-weight: bold; }
 
-@media (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .container__articulo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,7 +58,7 @@
     width: 150px;
     height: 150px; }
 
-@media (min-width: 1020px) {
+@media only screen and (min-width: 1024px) {
   .articulo__certificados {
     display: grid;
     grid-template-rows: 1fr 2fr; }
@@ -84,7 +84,7 @@
       width: auto;
       border-radius: 0.5rem; }
 
-@media (min-width: 1020px) {
+@media only screen and (min-width: 1024px) {
   .section-empresas .empresas__img-logo {
     display: flex;
     flex-direction: row-reverse;

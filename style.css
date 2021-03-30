@@ -2,7 +2,9 @@
 body{
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 h1{
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -13,7 +15,7 @@ h1{
 .navbar{
     margin-bottom: 0;
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
 .navbar {
     border-radius: 0;
 }}
@@ -84,45 +86,40 @@ address{
     margin: auto;
 }
 
-/* Grid */
-.textoPrincipal{
-    display: grid ;
-    grid-template-rows: 1fr 1fr 1fr;
-
-}
-.textoPrincipal h1{
-    justify-self: self-start;
-    padding: 4rem 2rem;
-}
-.textoPrincipal p{
-    padding-left: 2rem;
-}
-
-.menuPrincipal{
-    display: none;
-}
-
-@media only screen and (min-width: 768px){
-    .menuPrincipal {
+/* Index */
+@media only screen and (max-width:768px){
+    .row-responsive-6{
         display: grid;
-        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items:center;
+    }
+    .row-responsive-4{
+        display: grid;
+        grid-template-rows: 1fr  ;
+        justify-items:center ;
         
     }
-    .menuPrincipal ul {
-        grid-column-start: 2;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);   
-        justify-items: end;
+    .width-100{
+        width: 100%;
+        margin-bottom: 3rem;
     }
-    .menuPrincipal ul li{
-        justify-self: center;
-        padding: 0 1rem;
+    .flex-4 .btn{
+        margin:auto;
     }
 }
+
+
+
 
 
 /* Servicios */
 
+.servicios-titulo{
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+}
 
 .section__containers {
     display: grid;
@@ -136,7 +133,7 @@ address{
     width: auto;   
 }
 .section__container:first-of-type{
-    margin-top: 5em;
+    margin-top: 3rem;
 }
 .section__container{
     display: grid;
@@ -152,7 +149,7 @@ address{
     font-weight: bold;
 }
 
-@media only screen and (min-width:1020px){
+@media only screen and (min-width:1024px){
     .section__container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -162,7 +159,15 @@ address{
         grid-template-rows: 3fr 1fr;
         justify-items: center;
     }}
-
+.servicios-h6{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+}
+.servicios-contacto{
+    text-decoration: none;
+    color: #0d6efd ;
+}
 /* Blog */
 .section__blog:first-of-type{
     margin-top: 5em;
@@ -196,7 +201,7 @@ address{
     font-weight: 700;
 }
 
-@media only screen and (min-width:850px){
+@media only screen and (min-width:1024px){
     .section__blog{
         margin: 1.5rem 1rem; 
         display: grid;
@@ -385,7 +390,7 @@ address{
 
 /* Carrousel */
 
-@media (min-width: 1360px){
+@media only screen and (min-width: 1320px){
     .carousel-item{
         height: 100vh;}
 
