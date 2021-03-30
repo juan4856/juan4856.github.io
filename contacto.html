@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunicate con Aire Eléctrico">
+    <meta name="keywords" content="Contacto, Mail, Información Electricistas,">
+    <title>Contacto | Aire Eléctrico</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> <!-- Fuente poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Fuente opens sanz -->
+    <link href="/iconos/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!-- Iconos -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css"><!-- CSS -->
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Aire Eléctrico</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>         
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>      
+    <form class="container__form" action=""> <!-- Formulario de contacto -->
+      <fieldset> 
+        <h2 class="form-titulo">Solicitud de Contacto</h2>
+        <p class="form-parrafo">Por favor complete los siguientes campos:</p>
+        <div class="form__formulario">
+          <label   for="nombre">Nombre: </label>
+          <input class="formulario-nombre" type="text" name="nombre" required placeholder="Juan"> <br>
+          <label   for="apellido">Apellido: </label>
+          <input class="formulario-apellido"type="text" name="apellido" required placeholder="Perez"> <br>
+          <label  for="email">E-mail: </label>
+          <input class="formulario-email"type="email" name="email" placeholder="juan@gmail.com" multiple required> <br>
+          <div class="formulario-select">  
+            <h6>Elija el motivo:</h6>
+            <select name="asunto" id="">
+              <option value="0">Certificado DCI</option>
+              <option value="1">Declaración Jurada de Carga</option> 
+              <option value="2">Instalación Aire Acondicionado</option>
+              <option value="3">Instalaciones Domiciliaria</option>
+              <option value="4">Instalaciones Oficina</option>
+              <option value="5">Instalaciones Industrial</option>
+              <option value="6">Otro</option>
+            </select><br>
+          </div>
+          <h6 class="formulario__p">Mensaje:</h6>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui."></textarea><br>
+          <h6 class="formulario__p">¿Acepta terminos y condiciones?</h6>
+          <input type="checkbox" name="acepta" id="acepta" required>
+          <h6 class="formulario__p">¿Desea recibir nuestro Newsletter semanal?</h6>
+          <input type="checkbox" name="newsletter" id="newsletter"><br>
+          <input class="btn btn-primary boton" type="submit" value="Enviar"> <br>
+          <input class="btn btn-primary boton" type="reset" value="Resetear Formulario""> <br>
+        </div>
+      </fieldset>
+    </form>
+    <div class="mapa">
+      <h2 class="mapa-titulo">Nuestra ubicación</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6588139288137!2d-58.36358408893989!3d-34.61278809305661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d7c67a6db9%3A0xdb15e92d64c18fcd!2sJuana%20Manso%201300%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1616534214918!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+  </main>
+
+  <footer class="container-fluid  ">
+      <div class="row">
+        <div class="col -xl d-flex justify-content-center">
+          <nav class="iconos ">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          </nav>
+        </div>
+        <div class="col -xl d-flex justify-content-center ">
+          <address>
+            <p>Av. Rivadavia 7800, CABA</p>
+            <p>4856-4473</p>
+            <p>juan@gmail.com</p>
+          </address>
+        </div>
+        <div class="col -xl d-flex justify-content-center">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </footer>    
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
